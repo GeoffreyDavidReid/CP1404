@@ -1,0 +1,12 @@
+import random
+print(random.randint(5, 20))
+8 -- min 5 max 20
+print(random.randrange(3, 10, 2))
+7 -- min 3 max 9  -- 4 is not possible
+print(random.uniform(2.5, 5.5))
+4.796246279190488 -- min 2.5 max 5.5
+
+help(random.uniform)
+Help on method uniform in module random:
+uniform(a, b) method of random.Random instance
+    Get a random number in the range [a, b) or [a, b] depending on rounding.
