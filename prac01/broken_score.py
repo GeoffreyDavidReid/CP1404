@@ -12,6 +12,3 @@ elif score >= 50 < 90:
     print("Passable")
 else:
     print("Bad")
-
-# add comment
-# add comment
