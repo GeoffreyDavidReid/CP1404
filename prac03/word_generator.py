@@ -13,11 +13,18 @@ CONSONANTS = "bcdfghjklmnpqrstvwxyz"
 keep_looping = True
 word_format = ""
 
-while keep_looping == True:
-    word_format = input("Enter word format: ")
+def is_valid_format(word_format):
     for kind in word_format:
         if kind == "c" or kind == "v":
-            keep_looping = False
+            return True
+        else:
+            return False
+
+
+word_format = input("Enter word format: ")
+
+while is_valid_format(word_format) == False:
+    word_format = input("Enter word format: ")
 
 word = ""
 for kind in word_format:
