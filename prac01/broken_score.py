@@ -1,6 +1,7 @@
 """
 CP1404/CP5632 - Practical
 Program to determine score status
+
 """
 
 score = float(input("Enter score: "))
