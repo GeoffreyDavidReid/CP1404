@@ -11,7 +11,6 @@ VOWELS = "aeiou"
 CONSONANTS = "bcdfghjklmnpqrstvwxyz"
 
 keep_looping = True
-word_format = ""
 
 def is_valid_format(word_format):
     for kind in word_format:
@@ -19,7 +18,6 @@ def is_valid_format(word_format):
             return True
         else:
             return False
-
 
 word_format = input("Enter word format: ")
 
