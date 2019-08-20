@@ -10,7 +10,15 @@ import random
 VOWELS = "aeiou"
 CONSONANTS = "bcdfghjklmnpqrstvwxyz"
 
-word_format = "ccvcvvc"
+keep_looping = True
+word_format = ""
+
+while keep_looping == True:
+    word_format = input("Enter word format: ")
+    for kind in word_format:
+        if kind == "c" or kind == "v":
+            keep_looping = False
+
 word = ""
 for kind in word_format:
     if kind == "c":
