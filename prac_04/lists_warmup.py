@@ -13,7 +13,7 @@ print(7 in numbers)
 print("3"in numbers)
 print(numbers + [6, 5, 3])
 
-#output of list_warmup
+# output of list_warmup
 
 #3
 #2
