@@ -13,6 +13,13 @@ print("The largest number is", max(numbers))
 print("The average of the numbers is", sum(numbers) / len(numbers))
 
 # Security checker...
+
+# Create usernames list
+# usernames = []
+# Input length of usernames list
+# add username to usernames until length is reached
+# continue with rest of security checker program
+
 usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye',
              'swei45', 'BaseInterpreterInterface', 'BaseStdIn', 'Command',
              'ExecState', 'InteractiveConsole', 'InterpreterInterface',
