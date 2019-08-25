@@ -15,15 +15,15 @@ print("The average of the numbers is", sum(numbers) / len(numbers))
 # Security checker...
 
 # Create usernames list
-# usernames = []
-# Input length of usernames list
-# add username to usernames until length is reached
-# continue with rest of security checker program
+usernames = []
+print()
+length_of_list = int(input("Length of username list: ")) # Input length of usernames list
 
-usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye',
-             'swei45', 'BaseInterpreterInterface', 'BaseStdIn', 'Command',
-             'ExecState', 'InteractiveConsole', 'InterpreterInterface',
-             'StartServer', 'bob']
+for i in range(length_of_list):
+    username = input("Username: ")
+    usernames.append(username)
+
+print()
 username = input("Enter username:")
 if username in usernames:
     print("Access granted")
