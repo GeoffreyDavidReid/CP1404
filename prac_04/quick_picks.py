@@ -22,7 +22,7 @@ def main():
                 number = random.randint(MINIMUM, MAXIMUM)
             quick_pick.append(number)
         quick_pick.sort()
-            # generation expression to format each number in Quick picks
+            # generator expression to format each number in Quick picks
             #and turn it into a single string using the join method
         print(" ".join("{:2}".format(number) for number in quick_pick))
 
