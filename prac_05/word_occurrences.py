@@ -2,6 +2,8 @@
 
 words_str = str(input("Enter string of words: "))
 words_list = words_str.split()
+words_list_sorted = words_list.sort()
+print(words_list_sorted)
 
 word_count_dict = {}
 
