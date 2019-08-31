@@ -16,7 +16,7 @@ while colour_name != "":
         print("{} is {}".format(colour_name, COLOUR_NAMES[colour_name]))
     else:
         print("Invalid colour name")
-    colour_name = input("Enter colour name ie: AliceBlue ")
+    colour_name = input("Enter colour name ie AliceBlue: ")
     #colour_name = str.upper(colour_name)
 print()
 for colour_name in COLOUR_NAMES:
