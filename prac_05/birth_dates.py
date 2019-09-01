@@ -10,6 +10,7 @@ for i in range(index):
     day, month, year = date_of_birth.split("/")
     age = current_year - int(year)
     name_DOB_dict[date_of_birth] = name, age
+
     print("Name: ", name ,"Date of Birth: ", date_of_birth , "Age: ", age)
 
 print("Name DOB Dictionary: ", name_DOB_dict)
