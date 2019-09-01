@@ -3,7 +3,7 @@
 words_str = str(input("Enter string of words: "))
 words_list = words_str.split()
 words_list_sorted = words_list.sort()
-print(words_list_sorted)
+#print(words_list_sorted)
 
 word_count_dict = {}
 
@@ -13,4 +13,9 @@ for word in words_list:
     else:
         word_count_dict[word] = 1
 
-print(word_count_dict)
+for key,val in word_count_dict.items():
+    print("{}: {}".format(key, val))
+
+#print(word_count_dict)
+#print("Dictionary length is: ", len(word_count_dict))
+
