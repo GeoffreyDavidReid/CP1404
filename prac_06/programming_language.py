@@ -17,8 +17,8 @@ class ProgrammingLanguage:
 
     def __str__(self):
         """Return string representation of a ProgrammingLanguage."""
-        return "{}, {} Typing, Reflection={}, First appeared in {}".format(
-            self.name, self.typing, self.reflection, self.year)
+        return "{}, {} Typing, Reflection={}, First appeared in {}, Was authored by {}".format(
+            self.name, self.typing, self.reflection, self.year, self.author) #added author
 
     def is_dynamic(self):
         """Determine if language is dynamically typed."""
@@ -27,9 +27,9 @@ class ProgrammingLanguage:
 
 def run_tests():
     """Run simple tests/demos on ProgrammingLanguage class."""
-    ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
-    python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
-    visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
+    ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995, "Jack")
+    python = ProgrammingLanguage("Python", "Dynamic", True, 1991, "Jill")
+    visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991, "Thomas")
 
     languages = [ruby, python, visual_basic]
     print(python)
@@ -38,6 +38,7 @@ def run_tests():
     for language in languages:
         if language.is_dynamic():
             print(language.name)
+            print("test author: ", language.author) #add line
 
 
 if __name__ == "__main__":
