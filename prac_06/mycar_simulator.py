@@ -5,7 +5,7 @@ Car Driving Simulator
 
 from car import Car
 
-# MENU
+MENU = "Menu:\nd) drive\nr) refuel\nq) quit"
 
 def main():
     """main program
@@ -14,7 +14,7 @@ def main():
     name = input("Enter your car name: ")
     car = Car(name, 100)
     print(car)
-    #MENU
+    print(MENU)
     choice = input("Enter your choice: ").lower()
     while choice != "q":
         if choice == "d":
@@ -23,16 +23,24 @@ def main():
                 print("Distance must be greater than zero !")
                 distance_to_drive = int(input("How many km do you want to drive? "))
             distance_driven = car.drive(distance_to_drive)
-            print("The car drove {} km".format(distance_driven))
-
-
-    distance_to_drive = 100
-    distance_driven = car.drive(distance_to_drive)
-    print("TEST Distance driven", distance_driven)
-    print("TEST ", car)
-    fuel_to_add = 200
-    car.add_fuel(fuel_to_add)
-    print("TEST ", car)
+            print("The car drove {} km".format(distance_driven), end = "")
+            if car.fuel == 0:
+                print("and ran out of fuel", end="")
+                print(".")
+            elif choice == "r":
+                fuel_to_add = int(input("How many units of fuel do you wish to add ?"))
+                while fuel_to_add < 0:
+                    print("Fuel to add must be >= zero")
+                    fuel_to_add = int(input("How many units of fuel do you wish to add ?"))
+                car.add_fuel(fuel_to_add)
+                print("Added {} units of fuel".format(fuel_to_add))
+            else:
+                print("Invalid choice")
+            print()
+            print(car)
+            print(MENU)
+            choice = input("Enter your choice: ").lower()
+    print("\nGoodbye {}'s driver".format(car.name))
 
 main()
 
