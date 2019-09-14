@@ -27,4 +27,8 @@ def main():
     Chevrolet = Car("Chevrolet", 100) #add new instance
     print(Chevrolet.name) # add print
 
+    #print("TESTCar {}, {}".format(my_car.fuel, my_car.odometer))
+    #print("TESTCar {car.fuel}, {car.odometer}".format(car=my_car))
+
+
 main()
