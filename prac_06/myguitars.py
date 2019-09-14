@@ -34,6 +34,19 @@ def main():
     else:
         print("No guitars :( Quick, go and buy one!")
 
+    #print("TEST Guitar {}: {:>20} ({}), worth ${:10,.2f}{}".format(i + 1, guitar.name, guitar.year, guitar.cost,
+    #                                                          vintage_string))
+    #age = 17
+    #is_adult = True if age >= 18 else False
+    #print("TEST", is_adult)
+
+    #for i, guitar in enumerate(guitars):
+    #            guitar.name = i
+    #            print(i, guitar.name)
+
+# do something with i (the index) and guitar (the element)
+
+
 #  print("Guitar {0}: {1.name:>30} ({1.year}), worth ${1.cost:10,.2f}\
 #              {2}".format(i + 1, guitar, vintage_string))
 #
