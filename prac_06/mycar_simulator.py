@@ -23,23 +23,23 @@ def main():
                 print("Distance must be greater than zero !")
                 distance_to_drive = int(input("How many km do you want to drive? "))
             distance_driven = car.drive(distance_to_drive)
-            print("The car drove {} km".format(distance_driven), end = "")
+            print("The car drove {} km ".format(distance_driven), end = "")
             if car.fuel == 0:
                 print("and ran out of fuel", end="")
                 print(".")
-            elif choice == "r":
+        elif choice == "r":
+            fuel_to_add = int(input("How many units of fuel do you wish to add ?"))
+            while fuel_to_add < 0:
+                print("Fuel to add must be >= zero")
                 fuel_to_add = int(input("How many units of fuel do you wish to add ?"))
-                while fuel_to_add < 0:
-                    print("Fuel to add must be >= zero")
-                    fuel_to_add = int(input("How many units of fuel do you wish to add ?"))
-                car.add_fuel(fuel_to_add)
-                print("Added {} units of fuel".format(fuel_to_add))
-            else:
-                print("Invalid choice")
-            print()
-            print(car)
-            print(MENU)
-            choice = input("Enter your choice: ").lower()
+            car.add_fuel(fuel_to_add)
+            print("Added {} units of fuel".format(fuel_to_add))
+        else:
+            print("Invalid choice")
+        print()
+        print(car)
+        print(MENU)
+        choice = input("Enter your choice: ").lower()
     print("\nGoodbye {}'s driver".format(car.name))
 
 main()
