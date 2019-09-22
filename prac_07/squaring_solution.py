@@ -17,7 +17,7 @@ class SquareNumberApp(App):
         """Build the Kivy app from the kv file."""
         Window.size = (200, 100)
         self.title = "Square Number"
-        self.root = Builder.load_file('squaring.kv')
+        self.root = Builder.load_file('squaring_solution.kv')
         return self.root
 
     def handle_calculate(self, value):
