@@ -2,6 +2,10 @@
 
 from car import Car
 
-Car("Prius 1", 100)
+name = input("Name: ")
+fuel = int(input("Fuel: "))
 
-print(Car.name)
+car1 = Car(name, fuel)
+
+print(car1)
+
