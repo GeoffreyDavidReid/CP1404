@@ -16,3 +16,7 @@ car1 = Car(name, fuel, odometer)
 
 print(taxi)
 print(car1)
+
+taxi.add_fuel(12)
+
+print(taxi)
