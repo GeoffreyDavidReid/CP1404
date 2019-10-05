@@ -4,9 +4,9 @@ Testing my Product class
 
 from product import Product
 
-product1 = Product()
+product1 = Product("Geoff", 100, False )
 
-print("Test: ",product1)
+print(product1)
 
 # name = input("Name: ")
 # price = input("Price: ")
