@@ -13,4 +13,5 @@ def main():
     print(taxi)
     print(taxi.get_fare())
 
+
 main()
