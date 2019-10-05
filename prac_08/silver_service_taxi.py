@@ -3,7 +3,7 @@ CP1404/CP5632 Practical - Suggested Solution
 SilverServiceTaxi class, derived from Taxi
 """
 
-from prac_08.taxi import Taxi
+from taxi import Taxi
 
 
 class SilverServiceTaxi(Taxi):
@@ -12,7 +12,7 @@ class SilverServiceTaxi(Taxi):
 
     def __init__(self, name, fuel, fanciness):
         """Initialise a SilverServiceTaxi."""
-        super().__init__(name, fuel)
+        super().__init__(name, fuel, fanciness)
         self.fanciness = fanciness
         self.price_per_km *= fanciness
 
