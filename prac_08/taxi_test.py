@@ -1,22 +1,9 @@
-""" Test Car Class"""
+""" Test Taxi Class"""
 
-from car import Car
-
-name = input("Name: ")
-fuel = int(input("Fuel: "))
-odometer = int(input("Odometer: "))
-
-taxi = Car(name, fuel, odometer)
+from taxi import Taxi
 
 name = input("Name: ")
 fuel = int(input("Fuel: "))
-odometer = int(input("Odometer: "))
+price_per_km = int(input("Price per km: "))
 
-car1 = Car(name, fuel, odometer)
-
-print(taxi)
-print(car1)
-
-taxi.add_fuel(12)
-
-print(taxi)
+taxi1 = Taxi(name, fuel, price_per_km)
