@@ -13,3 +13,7 @@ class Product:
             on_sale_string = " On Sale"
         return "Name: {} Price: ${:.2f}{}".format(self.name, self.price, on_sale_string)
 
+    def _repr_(self):
+        return str(self)
+
+
