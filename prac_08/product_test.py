@@ -4,7 +4,7 @@ Testing my Product class
 
 from product import Product
 
-product1 = Product("Geoff", 100, False )
+product1 = Product("Geoff", 100, True )
 
 print(product1)
 

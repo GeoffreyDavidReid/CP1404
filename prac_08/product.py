@@ -8,5 +8,8 @@ class Product:
         self.is_on_sale = is_on_sale
 
     def __str__(self):
-        return("Name: {} Price: {} Is_on_sale: {}".format(self.name, self.price, self.is_on_sale))
+        on_sale_string = ""
+        if self.is_on_sale:
+            on_sale_string = " On Sale"
+        return "Name: {} Price: ${:.2f}{}".format(self.name, self.price, on_sale_string)
 
