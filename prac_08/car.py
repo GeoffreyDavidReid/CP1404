@@ -7,7 +7,7 @@ Car class
 class Car:
     """Represent a Car object."""
 
-    def __init__(self, name="", fuel=0):
+    def __init__(self, name="", fuel=0, odometer=100):
         """Initialise a Car instance.
 
         name: string, reference name for car
@@ -15,7 +15,8 @@ class Car:
         """
         self.name = name
         self.fuel = fuel
-        self.odometer = 0
+        #self.odometer = 0
+        self.odometer = odometer
 
     def __str__(self):
         """Return a string representation of a Car object."""
