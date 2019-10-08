@@ -19,6 +19,23 @@ def main():
     # Make a new directory
     # The next time you run this, it will crash if the directory exists
     # TODO: Use exception handling to avoid the crash (just pass)
+
+    # is_valid_input = False
+    # while not is_valid_input:
+    #     try:
+    #         age = int(input("Age: "))
+    #         if age < 0:
+    #             print("Age must be >= 0")
+    #         else:
+    #             is_valid_input = True
+    #     except ValueError:
+    #         print("Invalid (not an integer)")
+    # print("Next year you will be", age + 1)
+
+
+
+
+
     os.mkdir('temp')
 
     # Loop through each file in the (current) directory
