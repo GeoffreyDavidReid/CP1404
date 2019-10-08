@@ -22,17 +22,18 @@ def main():
 
     # is_valid_input = False
     # while not is_valid_input:
-    #     try:
+    try:
+        os.mkdir('temp')
     #         age = int(input("Age: "))
     #         if age < 0:
     #             print("Age must be >= 0")
     #         else:
     #             is_valid_input = True
-    #     except FileExistsError:
-    #         print("Invalid (not an integer)")
+    except FileExistsError:
+             print("File all ready exists")
     # print("Next year you will be", age + 1)
 
-    os.mkdir('temp')
+    #os.mkdir('temp')
 
     # Loop through each file in the (current) directory
     for filename in os.listdir('.'):
