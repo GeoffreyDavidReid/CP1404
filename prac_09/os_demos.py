@@ -20,8 +20,6 @@ def main():
     # The next time you run this, it will crash if the directory exists
     # TODO: Use exception handling to avoid the crash (just pass)
 
-    # is_valid_input = False
-    # while not is_valid_input:
     try:
         os.mkdir('temp')
     except FileExistsError:
