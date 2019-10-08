@@ -28,13 +28,9 @@ def main():
     #             print("Age must be >= 0")
     #         else:
     #             is_valid_input = True
-    #     except ValueError:
+    #     except FileExistsError:
     #         print("Invalid (not an integer)")
     # print("Next year you will be", age + 1)
-
-
-
-
 
     os.mkdir('temp')
 
