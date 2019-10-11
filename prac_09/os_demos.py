@@ -47,14 +47,17 @@ def get_fixed_filename(filename):
 def demo_walk():
     """Process all subdirectories using os.walk()."""
     os.chdir('Lyrics')
+    # for directory_name, subdirectories, filenames in os.walk('.'):
+    #     print("Directory:", directory_name)
+    #     print("\tcontains subdirectories:", subdirectories)
+    #     print("\tand files:", filenames)
+    #     print("(Current working directory is: {})".format(os.getcwd()))
+
     for directory_name, subdirectories, filenames in os.walk('.'):
-        print("Directory:", directory_name)
-        print("\tcontains subdirectories:", subdirectories)
-        print("\tand files:", filenames)
-        print("(Current working directory is: {})".format(os.getcwd()))
+
 
         # TODO: add a loop to rename the files
 
 
-main()
-# demo_walk()
+#main()
+demo_walk()
