@@ -16,7 +16,7 @@ def main():
             continue
 
         extension = filename.split('.')[-1]
-        # if extension not in extension_to_category:
+        # if extension not in extension_to_category: this line evaluates to FALSE always
         if extension not in extension_to_category:
             category = input("What category would you like to sort {} files into? ".format(extension))
             # Now we can map this new extension to a folder name
