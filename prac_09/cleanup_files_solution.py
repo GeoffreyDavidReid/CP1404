@@ -15,10 +15,10 @@ def main():
     # Change to desired directory
     os.chdir('Lyrics')
     for directory_name, subdirectories, filenames in os.walk('.'):
-        # print("Directory:", directory_name)
-        # print("\tcontains subdirectories:", subdirectories)
-        # print("\tand files:", filenames)
-        # print("(Current working directory is: {})".format(os.getcwd()))
+        print("Directory:", directory_name) # these lines were commented out
+        print("\tcontains subdirectories:", subdirectories) #
+        print("\tand files:", filenames) #
+        print("(Current working directory is: {})".format(os.getcwd())) #
 
         for filename in filenames:
             new_name = get_fixed_filename(filename)
