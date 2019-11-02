@@ -11,6 +11,7 @@ def repeat_string(s, n):
     """Repeat string s, n times, with spaces in between."""
     return (s + " ") * (n - 1) + s
 
+
 def is_long_word(word, length=5):
     """
     Determine if the word is as long or longer than the length passed in
@@ -45,9 +46,9 @@ def run_tests():
     # using the value passed in or the default
     # You should test both of these
     test_car = Car(fuel=10)
-    #assert test_car.fuel == 0, "Should fail"
+    # assert test_car.fuel == 0, "Should fail"
     assert test_car.fuel == 10, "Should pass"
-    #assert test_car.fuel == 15, "Should fail"
+    # assert test_car.fuel == 15, "Should fail"
 
 
 run_tests()
@@ -55,6 +56,7 @@ run_tests()
 # TODO: 3. Uncomment the following line and run the doctests
 # Done
 doctest.testmod()
+
 
 # TODO: 4. Fix the failing is_long_word function
 # Done
@@ -69,12 +71,20 @@ doctest.testmod()
 # test this and watch the tests fail
 # then write the body of the function so that the tests pass
 
-def format_a_phrase_as_a_sentence():
-    pass
-"""
->>> format_a_phrase_as_a_sentence('hello'):
-'Hello.'
->>> format_a_phrase_as_a_sentence('It is an ex parrot.')
-'It is an ex parrot.'
-"""
+def format_a_phrase_as_a_sentence(phrase):
+    """
+    >>> format_a_phrase_as_a_sentence('hello')
+    'Hello.'
+    >>> format_a_phrase_as_a_sentence('It is an ex parrot.')
+    'It is an ex parrot.'
+    >>> format_a_phrase_as_a_sentence('It is an ex parrot.')
+    'It is'
+    """
+    # capitalise the first letter
+    sentence = phrase.capitalize()
+    # add the full stop, but only if we need to
+    if sentence[-1] != '.':
+        sentence += '.'
+    return sentence
+
 doctest.testmod()
